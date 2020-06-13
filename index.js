@@ -5,12 +5,11 @@
 -->   Si el número es divisible por 7, debes omitir el siguiente número.
 -->   Si el número es divisible entre 10 o 15, debes imprimir “Donkey!”.
 -->   Si el número no es divisible por 2 y el número anterior es divisible por 10, debes imprimir “Monkey!”.
+let ope = 14%7 
+console.log(ope)
 */
-//let ope = 0%10 
-//ºconsole.log(ope)
-
-for (let i = 1; i <= 50; i++){
-  if (i%7 === 0){
+for (let i = 1; i <= 50; i=i+1){
+  if (i%7 === 1){
     continue
   } else if (i%2 !=0 && (i-1)%10===0){
     console.log('“Monkey')
@@ -21,3 +20,4 @@ for (let i = 1; i <= 50; i++){
   }else {
   console.log(i)}
 }
+
